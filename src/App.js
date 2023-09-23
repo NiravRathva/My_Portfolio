@@ -1,6 +1,7 @@
 import Navbar from "./Component/Navbar";
 import Intro from "./Component/Intro";
 import bgImage from "./Images/bg1.jpg";
+import About from "./Component/About";
 function App() {
   return (
     <div className="App">
@@ -13,7 +14,7 @@ function App() {
       <Intro style={{ zIndex: 2 }} />
       </div>
 
-     
+     <About/>
     </div>
   );
 }
