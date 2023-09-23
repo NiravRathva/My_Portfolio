@@ -63,7 +63,7 @@ const Navbar = () => {
               href="#Projects"
               className="text-black text-base md:text-lg lg:text-lg font-black md:font-bold xl:text-2xl mx-4 hover:text-gray-500 hover:underline"
             >
-              Project
+              Projects
             </a>
           </li>
           <li>

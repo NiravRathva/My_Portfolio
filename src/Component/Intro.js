@@ -10,7 +10,7 @@ const Intro = () => {
         And I'm a Web Developer
       </h1>
       <button className="bg-gray-300 hover:bg-gray-400 py-2 px-4 rounded-lg text-gray-800 font-bold text-sm md:text-base mt-4 transition duration-300 my-2">
-        Hire me
+        <a href="#contact">Hire me</a>
       </button>
     </div>
   );

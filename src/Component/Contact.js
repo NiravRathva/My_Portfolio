@@ -3,8 +3,34 @@ import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 const Contact = () => {
+  const formRef = useRef();
+  const [done, setDone] = useState(false);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_g2b21jv",
+        "template_heuu2ai",
+        formRef.current,
+        "tkFg5_3mqbZsKYILQ"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setDone(true);
+
+          setTimeout(() => {
+            setDone(false);
+          }, 5000);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <div id="contact" className="bg-gray-100 py-12 lg:py-24">
       <div className="container mx-auto px-4 flex flex-col items-center">
@@ -38,16 +64,19 @@ const Contact = () => {
       </div>
       {/* lower section */}
       <div className="container mx-auto px-4 mt-8">
-        <form action="">
+        {/* form  */}
+        <form ref={formRef} onSubmit={handleSubmit}>
           <div className="lg:flex items-center">
             <div className="mb-4 lg:w-1/2 lg:pr-4 ">
               <input
                 type="text"
+                name="name"
                 placeholder="Enter Your Name"
                 className="w-full p-2 rounded-md border border-gray-300 focus:outline-none focus:border-gray-400"
               />
               <input
                 type="email"
+                name="email"
                 placeholder="Enter Your Email"
                 className="mt-4 w-full p-2 rounded-md border border-gray-300 focus:outline-none focus:border-gray-400"
               />
@@ -57,6 +86,7 @@ const Contact = () => {
                 cols="10"
                 placeholder="Enter Your Message"
                 rows="5"
+                name="message"
                 className="w-full p-2 rounded-md border border-gray-300 focus:outline-none focus:border-gray-400"
               ></textarea>
             </div>
@@ -70,6 +100,13 @@ const Contact = () => {
             </button>
           </div>
         </form>
+        {done && (
+          <div className="mt-4 text-center">
+            <p className="text-green-600 font-semibold">
+              Thank you for your message.
+            </p>
+          </div>
+        )}
       </div>
     </div>
   );
