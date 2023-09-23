@@ -34,7 +34,7 @@ const Navbar = () => {
           </li>
           <li>
             <a
-              href="/about"
+              href="#about"
               className="text-black  text-base md:text-lg lg:text-lg font-black md:font-bold xl:text-2xl mx-4"
             >
               About
@@ -42,7 +42,7 @@ const Navbar = () => {
           </li>
           <li>
             <a
-              href="/project"
+              href="#Projects"
               className="text-black  text-base md:text-lg lg:text-lg font-black md:font-bold xl:text-2xl mx-4"
             >
               Project
@@ -50,7 +50,7 @@ const Navbar = () => {
           </li>
           <li>
             <a
-              href="/contact"
+              href="#contact"
               className="text-black  text-base md:text-lg lg:text-lg font-black md:font-bold xl:text-2xl mx-4"
             >
               Contact

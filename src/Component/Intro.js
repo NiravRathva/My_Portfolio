@@ -9,7 +9,7 @@ const Intro = () => {
       <h1 className="text-base md:text-lg lg:text-xl xl:text-2xl">
         And I'm a Web Developer
       </h1>
-      <button className="mt-4 px-4 md:px-6 lg:px-8 py-2 md:py-2 lg:py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-md text-sm md:text-base">
+      <button  className="bg-gray-300 py-2 px-4 rounded-lg text-gray-800 font-bold text-sm md:text-base mt-4">
         Hire me
       </button>
     </div>

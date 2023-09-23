@@ -15,7 +15,10 @@ const About = () => {
       <div className="w-full md:w-2/3 p-2 md:p-4 lg:p-6">
         <h1 className="text-3xl md:text-4xl font-bold mb-4">About Me</h1>
         {/* summary  */}
-        
+        <p className="text-base md:text-lg text-gray-700 mb-4">
+        As a Computer Engineering graduate from L.D. College of Engineering, I have a strong foundation in web development, particularly in the MERN stack. I've honed my skills through two internships, where I contributed to UI enhancements and mobile responsiveness at Alluvium IoT Solutions, and developed an online local services platform with state-of-the-art features at Unnati Informatics, including React-Redux for state management and real-time updates via Axios.
+        </p>
+        <p className="text-base md:text-lg text-gray-700 mb-4">With multiple MongoDB certifications, including Using MongoDB with Node.js and MongoDB Node.js Developer Path, I've demonstrated my proficiency in utilizing MongoDB for web applications. Eager to advance my web development skills, I'm seeking opportunities to collaborate, learn from experts, and deliver innovative solutions in the industry.</p>
         {/* skills  */}
         <h2 className="text-xl md:text-2xl font-bold mb-2">My Skills</h2>
         <div className="flex flex-wrap gap-2 md:gap-4">
@@ -32,10 +35,23 @@ const About = () => {
             ReactJs
           </div>
           <div className="bg-gray-300 py-2 px-4 rounded-lg text-gray-800 font-bold text-sm md:text-base">
-            Github
+            Redux
           </div>
           <div className="bg-gray-300 py-2 px-4 rounded-lg text-gray-800 font-bold text-sm md:text-base">
+            ExpressJs
+          </div><div className="bg-gray-300 py-2 px-4 rounded-lg text-gray-800 font-bold text-sm md:text-base">
+            Nodejs
+            </div><div className="bg-gray-300 py-2 px-4 rounded-lg text-gray-800 font-bold text-sm md:text-base">
+            MongoDB
+            </div>
+          <div className="bg-gray-300 py-2 px-4 rounded-lg text-gray-800 font-bold text-sm md:text-base">
             Bootstrap
+          </div>
+          <div className="bg-gray-300 py-2 px-4 rounded-lg text-gray-800 font-bold text-sm md:text-base">
+            Tailwind 
+          </div>
+          <div className="bg-gray-300 py-2 px-4 rounded-lg text-gray-800 font-bold text-sm md:text-base">
+            Github
           </div>
         </div>
       </div>

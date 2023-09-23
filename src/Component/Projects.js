@@ -2,13 +2,13 @@ import { projectsData } from "../ProjectData";
 
 const Projects = () => {
   return (
-    <div className="container mx-auto">
+    <div id="Projects" className="container mx-auto ">
       <div className="text-center">
         <h1 className="text-4xl font-bold mt-8">Some of my recent Projects</h1>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 ">
         {projectsData.map((project) => (
-          <div key={project.id} className="bg-white rounded-lg shadow-lg p-4">
+          <div key={project.id} className="bg-white rounded-lg shadow-lg p-4 h-fit">
             <img
               src={project.img}
               alt={project.name}
