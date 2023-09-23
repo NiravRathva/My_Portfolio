@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -6,45 +6,69 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const Contact = () => {
   return (
-    <div id="contact" className="flex flex-col md:flex-row h-screen justify-center" >
-      {/* Left Section */}
-      <div className="md:w-1/2 p-4 bg-gray-100 flex  items-center ">
-        <div>
-          <h1 className="text-2xl font-bold">Contact info</h1>
-          <div className="mt-4">
-            <div className="flex items-center mb-2">
-              <EmailOutlinedIcon className="mr-2" />: niravrtw01@gmail.com
-            </div>
-            <div className="flex items-center mb-2">
-              <LocationOnOutlinedIcon className="mr-2" />: Vadodara, Gujarat, India
-            </div>
-            <div className="flex items-center mb-2">
-              <a href="https://github.com/NiravRathva" className="flex items-center">
-                <GitHubIcon className="mr-2" /> GitHub
-              </a>
-            </div>
-            <div className="flex items-center">
-              <a href="https://www.linkedin.com/in/nirav-rathwa-8b0813290/" className="flex items-center">
-                <LinkedInIcon className="mr-2" /> LinkedIn
-              </a>
-            </div>
+    <div id="contact" className="bg-gray-100 py-12 lg:py-24">
+      <div className="container mx-auto px-4 flex flex-col items-center">
+        <div className="text-center">
+          <h1 className="text-3xl lg:text-4xl font-semibold text-gray-700 mb-2">
+            GET IN TOUCH
+          </h1>
+          <p className="text-gray-500">
+            <b>What’s your story?</b> Get in touch. Always available for
+            freelancing if the right project comes along.
+          </p>
+        </div>
+        <div className="mt-8 text-center">
+          <p className="flex items-center">
+            <EmailOutlinedIcon className="text-gray-500 mr-2" />
+            niravrtw01@gmail.com
+          </p>
+          <p className="flex items-center mt-4">
+            <LocationOnOutlinedIcon className="text-gray-500 mr-2 " />
+            Vadodara, Gujrat, India
+          </p>
+          <div className="mt-4 flex space-x-4 justify-center">
+            <a href="https://github.com/NiravRathva">
+              <GitHubIcon className="text-gray-500 hover:text-gray-600" />
+            </a>
+            <a href="https://www.linkedin.com/in/nirav-rathwa-8b0813290/">
+              <LinkedInIcon className="text-gray-500 hover:text-gray-600" />
+            </a>
           </div>
         </div>
       </div>
-
-      {/* Right Section */}
-      <div className="md:w-1/2 p-4 bg-gray-200 flex  items-center flex-col ">
-        <div>
-        <h1 className="text-2xl font-bold">Contact Me</h1>
-        <p className="mt-4">
-          <b>What’s your story?</b> Get in touch. Always available for freelancing if the right project comes along.
-        </p>
-        </div>
-        <form className="mt-4">
-          <input type="text" placeholder="Name" name="name" className="mb-2 p-2 rounded-md w-full" />
-          <input type="text" placeholder="Email" name="email" className="mb-2 p-2 rounded-md w-full" />
-          <textarea name="message" placeholder="Enter your message" rows="5" className="mb-2 p-2 rounded-md w-full"></textarea>
-          <button className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md">Submit</button>
+      {/* lower section */}
+      <div className="container mx-auto px-4 mt-8">
+        <form action="">
+          <div className="lg:flex items-center">
+            <div className="mb-4 lg:w-1/2 lg:pr-4 ">
+              <input
+                type="text"
+                placeholder="Enter Your Name"
+                className="w-full p-2 rounded-md border border-gray-300 focus:outline-none focus:border-gray-400"
+              />
+              <input
+                type="email"
+                placeholder="Enter Your Email"
+                className="mt-4 w-full p-2 rounded-md border border-gray-300 focus:outline-none focus:border-gray-400"
+              />
+            </div>
+            <div className="lg:w-1/2 lg:pl-4">
+              <textarea
+                cols="10"
+                placeholder="Enter Your Message"
+                rows="5"
+                className="w-full p-2 rounded-md border border-gray-300 focus:outline-none focus:border-gray-400"
+              ></textarea>
+            </div>
+          </div>
+          <div className="text-center mt-6">
+            <button
+              type="submit"
+              className="bg-gray-500 hover:bg-gray-600 text-white py-2 px-4 rounded-md"
+            >
+              Submit
+            </button>
+          </div>
         </form>
       </div>
     </div>
