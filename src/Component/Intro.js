@@ -2,7 +2,7 @@ import React from 'react';
 
 const Intro = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-full text-white">
+    <div id="home" className="flex flex-col items-center justify-center h-full text-white">
       <h1 className="text-lg md:text-xl lg:text-3xl xl:text-5xl font-bold lg:font-black text-gray-800 my-2">
         I'm Nirav Rathwa
       </h1>
