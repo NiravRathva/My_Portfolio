@@ -3,6 +3,7 @@ import Intro from "./Component/Intro";
 import bgImage from "./Images/bg1.jpg";
 import About from "./Component/About";
 import Projects from "./Component/Projects";
+import Contact from "./Component/Contact";
 function App() {
   return (
     <div className="App">
@@ -17,6 +18,7 @@ function App() {
 
       <About />
       <Projects />
+      <Contact />
     </div>
   );
 }
