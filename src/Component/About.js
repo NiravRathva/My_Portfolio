@@ -15,12 +15,7 @@ const About = () => {
       <div className="w-full md:w-2/3 p-2 md:p-4 lg:p-6">
         <h1 className="text-3xl md:text-4xl font-bold mb-4">About Me</h1>
         {/* summary  */}
-        <p className="text-base md:text-lg text-gray-700 mb-4">
-          It is a long established fact that a reader will be distracted by the
-          readable content. Lorem ipsum, dolor sit amet consectetur adipisicing
-          elit. Dolorum perferendis vitae aspernatur eligendi illo rerum
-          consequuntur temporibus cupiditate, odit minus magni nisi.
-        </p>
+        
         {/* skills  */}
         <h2 className="text-xl md:text-2xl font-bold mb-2">My Skills</h2>
         <div className="flex flex-wrap gap-2 md:gap-4">
