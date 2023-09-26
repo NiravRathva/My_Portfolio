@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       {/* Shared background container */}
       <div
-        className=" bg-cover bg-center h-96 md:h-screen opacity-80 "
+        className=" bg-cover bg-center h-96 lg:h-screen opacity-80 "
         style={{ backgroundImage: `url(${bgImage})`, zIndex: 1 }}
       >
         <Navbar style={{ zIndex: 2 }} />

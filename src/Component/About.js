@@ -3,9 +3,9 @@ import mypic2 from "../Images/mypic2.png";
 
 const About = () => {
   return (
-    <div id="about" className="about h-fit md:h-screen flex items-center">
+    <div id="about" className="about h-fit lg:h-screen flex items-center justify-center">
       {/* left section */}
-      <div className="w-1/3 relative items-center hidden md:block p-2 md:p-4 lg:p-6 mx-auto z-[-1]">
+      <div className="w-1/3 relative items-center hidden lg:block p-2 md:p-4 lg:p-6 mx-auto z-[-1]">
         <div className="absolute rounded-lg bg-gray-600 w-1/2 h-[50vh] lg:ml-12 "></div>
         <div className="w-3/5 h-[50vh] top-9 left-9 rounded-lg relative lg:ml-12 ">
           {/* my Image  */}

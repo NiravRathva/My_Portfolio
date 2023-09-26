@@ -2,7 +2,7 @@ import React from "react";
 
 const Project = ({project}) => {
   return (
-    <div>
+    <div className="z-[-1]">
       <div
         
         className="bg-gray-100 my-2 rounded-lg shadow-lg p-4 hover:shadow-xl transition duration-300 mt-8 relative z-[-1] h-fit"

@@ -35,7 +35,7 @@ const Projects = () => {
         ))}
       </div>
       {selectedProject && (
-        <div className="fixed top-0 left-0 right-0 bottom-0 lg:inset-x-20 lg:inset-y-20   bg-white  z-40 p-4 overflow-y-auto ">
+        <div className="fixed top-0 left-0 right-0 bottom-0 lg:inset-x-20 lg:inset-y-20   bg-white   p-4 overflow-y-auto ">
           <button
             onClick={closeProject}
             className="absolute top-2 right-2 px-2 py-1 my-2 bg-red-500 text-white rounded cursor-pointer"
