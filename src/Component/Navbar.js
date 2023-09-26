@@ -27,7 +27,7 @@ const Navbar = () => {
   }, []);
 
   // for fixed navbar
-  const navbarClasses = `md:fixed top-0 left-0 right-0 p-4 z-10 ${
+  const navbarClasses = `md:fixed top-0 left-0 right-0 p-4 z-50 ${
     scrolling ? "bg-white shadow-lg" : ""
   }`;
   return (

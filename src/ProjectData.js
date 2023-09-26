@@ -14,7 +14,7 @@ export const projectsData = [
   {
     id: "2",
     img: bg,
-    name: "Youtube Clone",
+    name: "Instagram Clone",
     description:
       "Developed  youtube clone website, where user can signin , add a video , search video etc",
     link: "/",
