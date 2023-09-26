@@ -27,12 +27,16 @@ const Navbar = () => {
   }, []);
 
   // for fixed navbar
-  const navbarClasses = `md:fixed top-0 left-0 right-0 p-4 z-50 ${
+  const navbarClasses = `md:fixed top-0 left-0 right-0 lg:p-4 p-2 z-50 ${
     scrolling ? "bg-white shadow-lg" : ""
   }`;
   return (
     <nav className={navbarClasses}>
-      <div className="container mx-auto flex justify-between items-center">
+      <div
+        className={`container mx-auto flex ${
+          isOpen ? " " : "justify-between items-center"
+        } `}
+      >
         {/* Hamburger icon for small screens */}
         <div className="md:hidden">
           <button onClick={toggleNavbar} className="text-white">
@@ -41,11 +45,15 @@ const Navbar = () => {
         </div>
 
         {/* Navigation links */}
-        <ul className={`md:flex ${isOpen ? "block" : "hidden"}`}>
+        <ul
+          className={`md:flex ${
+            isOpen ? "block   flex " : "hidden"
+          }`}
+        >
           <li>
             <a
               href="#home"
-              className="text-black text-base md:text-lg lg:text-lg font-black md:font-bold xl:text-2xl mx-4 hover:text-gray-500 hover:underline smooth-scroll"
+              className="text-black text-base md:text-lg lg:text-lg font-black md:font-bold xl:text-2xl lg:mx-4 mx-1 hover:text-gray-500 hover:underline smooth-scroll"
             >
               Home
             </a>
@@ -53,7 +61,7 @@ const Navbar = () => {
           <li>
             <a
               href="#about"
-              className="text-black text-base md:text-lg lg:text-lg font-black md:font-bold xl:text-2xl mx-4 hover:text-gray-500 hover:underline"
+              className="text-black text-base md:text-lg lg:text-lg font-black md:font-bold xl:text-2xl lg:mx-4 mx-1 hover:text-gray-500 hover:underline"
             >
               About
             </a>
@@ -61,7 +69,7 @@ const Navbar = () => {
           <li>
             <a
               href="#Projects"
-              className="text-black text-base md:text-lg lg:text-lg font-black md:font-bold xl:text-2xl mx-4 hover:text-gray-500 hover:underline"
+              className="text-black text-base md:text-lg lg:text-lg font-black md:font-bold xl:text-2xl lg:mx-4 mx-1 hover:text-gray-500 hover:underline"
             >
               Projects
             </a>
@@ -69,7 +77,7 @@ const Navbar = () => {
           <li>
             <a
               href="#contact"
-              className="text-black text-base md:text-lg lg:text-lg font-black md:font-bold xl:text-2xl mx-4 hover:text-gray-500 hover:underline"
+              className="text-black text-base md:text-lg lg:text-lg font-black md:font-bold xl:text-2xl lg:mx-4 mx-1 hover:text-gray-500 hover:underline"
             >
               Contact
             </a>
